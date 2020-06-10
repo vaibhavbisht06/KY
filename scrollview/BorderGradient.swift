@@ -5,11 +5,10 @@
 //  Created by Vaibhav Bisht on 31/05/20.
 //  Copyright © 2020 Vaibhav Bisht. All rights reserved.
 //
-
 import UIKit
 
 @IBDesignable
-class knGradientBorderButton: UIButton {
+class BorderGradient: UIButton {
     
 //    var colors: [UIColor] = [.blue, .green]
 //    var startPoint = CGPoint.zero
@@ -36,7 +35,7 @@ class knGradientBorderButton: UIButton {
     }
     
     @IBInspectable
-    var bgColor: UIColor? {
+    override var backgroundColor: UIColor? {
         didSet {
             setupView(leftGradientColor: leftGradientColor, rightGradientColor: rightGradientColor,
             backgroundColor: backgroundColor)
@@ -415,5 +414,3 @@ extension UIEdgeInsets {
     
     
 }
-
-
